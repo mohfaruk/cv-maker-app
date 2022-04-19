@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import GeneralInfoForm from "./components/GeneralInfoForm";
+import ExperienceForm from "./components/ExperienceForm";
+import CVInfoContextProvider from "./contexts/CVInfoContext";
+import EducationForm from "./components/EducationForm";
+import ExperienceList from "./components/ExperienceList";
+import EducationList from "./components/EducationList";
+import GeneralInfoList from "./components/GeneralInfoList";
+import SkillForm from "./components/SkillForm";
+import SkillList from "./components/SkillList";
+import PrintButton from "./components/PrintButton";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <CVInfoContextProvider>
+        <div id="form-container">
+          <Header />
+          <GeneralInfoForm />
+          <hr />
+          <ExperienceForm />
+          <hr />
+          <EducationForm />
+          <hr />
+          <SkillForm />
+        </div>
+        <div id="CV">
+          <GeneralInfoList />
+          <ExperienceList />
+          <EducationList />
+          <SkillList />
+        </div>
+        <PrintButton />
+      </CVInfoContextProvider>
     </div>
   );
 }
