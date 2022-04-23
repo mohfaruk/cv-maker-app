@@ -1,3 +1,19 @@
+## CV Maker
+
+A React application which takes users data inputs, and prints a CV using the entered data. This project uses controlled forms, hooks and allowed me to practice using the Context API State Management. The CV printing feature was built with JavaScript, although it does this with minimal styling. The idea was to implement a CV template builder that quickly creates a CV without too many features.
+
+## Lessons Learned
+
+This project was an extension of what I already learned in the Note Keeper app (using Hooks). However, I wanted to practise using Context API, which I had just spent time learning about. After successfully applying Context into the app, I immediately valued how much cleaner it was to manage states. The state management feature was definitely something I would be using in larger React applications due to how effective it is to organise global states in one file, rather than duplicate them in multiple places.
+
+Overall, the app works how I planned but I wasn’t impressed with the lack of styling when a user attempts to print the CV. This is an area of the project I will be revisiting.
+
+## Future Updates
+
+• Include a feature which allows users to print off a styled copy of the CV.
+
+• Styling feature could allow users to choose how to style their CV (font colours, background etc).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
